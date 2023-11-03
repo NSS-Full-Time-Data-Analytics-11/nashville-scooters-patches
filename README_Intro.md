@@ -20,3 +20,4 @@ As you know, it's important to gain an understanding of new datasets before divi
 - What are the minimum and maximum values for all the latitude and longitude columns? Do these ranges make sense, or is there anything surprising?
 -What is the range of values for trip duration and trip distance? Do these values make sense? Explore values that might seem questionable.
 - Check out how the values for the company name column in the scooters table compare to those of the trips table. What do you notice?
+data/
