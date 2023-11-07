@@ -9,18 +9,18 @@ SELECT *
 FROM scooters inner join trips using (sumdid)
 LIMIT 100000;
 
-SELECT max(tripdistance) as max_distance, sumdgroup,startdate,enddate
-FROM scooters inner join trips using (sumdid)
+
+SELECT max(tripdistance) as max_distance, sumdgroup,
+                                                   (SELECT extract(day from pubtimestamp) as day)
+FROM trips inner join scooters using (sumdid)
 WHERE scooters.companyname = 'Lime'
    AND trips.companyname = 'Lime'
-GROUP BY sumdgroup,startdate,enddate
-ORDER BY max_distance
+GROUP BY sumdgroup,day
 LIMIT 500;
 
-SELECT avg(tripduration) as avarage_trip_time, sumdgrup,startdate, enddate
-FROM scooters inner join trips using (sumdid)
+SELECT avg(tripduration) as avg_duration, sumdgroup,(SELECT extract(day from pubtimestamp) as day)
+FROM trips inner join scooters using (sumdid)
 WHERE scooters.companyname = 'Lime'
-   AND trips.companyname= 'Lime'
-GROUP BY sumdgroup,startdate,enddate
-ORDER BY average_trip_time
+   AND trips.companyname = 'Lime'
+GROUP BY sumdgroup,day
 LIMIT 500;
