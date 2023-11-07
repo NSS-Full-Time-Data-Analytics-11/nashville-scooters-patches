@@ -32,5 +32,24 @@ GROUP BY sumdid
 ORDER BY avg_trips DESC;
 
 
+SELECT create_dt, starttime, sumdid
+FROM trips
+LIMIT 10;
 
+WITH hours AS(SELECT EXTRACT(HOUR from starttime)AS hour, sumdid
+		FROM trips
+		WHERE companyname = 'Lime'
+		ORDER BY hour DESC)
+SELECT hour, COUNT(hour)AS num_of_start_times
+FROM hours
+GROUP BY hour
+ORDER BY num_of_start_times DESC;
 
+SELECT sumdid, ROUND(MAX(tripdistance)* 0.0001894, 2)AS max_distance_miles
+FROM trips
+WHERE companyname = 'Lime'
+GROUP BY sumdid
+ORDER BY max_distance_miles DESC;
+
+SELECT triproute, sumdid
+FROM trips
