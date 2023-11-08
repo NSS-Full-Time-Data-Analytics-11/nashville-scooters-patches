@@ -45,11 +45,27 @@ FROM hours
 GROUP BY hour
 ORDER BY num_of_start_times DESC;
 
-SELECT sumdid, ROUND(MAX(tripdistance)* 0.0001894, 2)AS max_distance_miles
+SELECT sumdid, ROUND(MAX(tripdistance)* 0.0001894, 2)AS max_distance_miles, startlatitude, startlongitude
+	FROM trips
+	WHERE companyname = 'Lime'
+	GROUP BY sumdid, startlatitude, startlongitude
+	ORDER BY max_distance_miles DESC
+	LIMIT 50;
+
+
+
+
+SELECT starttime, endtime, create_dt, sumdid, pubtimestamp
+FROM trips
+LIMIT 2000;
+
+SELECT COUNT(sumdid)AS num_scooters, startdate
 FROM trips
 WHERE companyname = 'Lime'
-GROUP BY sumdid
-ORDER BY max_distance_miles DESC;
+GROUP BY startdate
+ORDER BY num_scooters DESC;
 
-SELECT triproute, sumdid
-FROM trips
+SELECT sumdgroup
+FROM scooters
+LIMIT 20
+
