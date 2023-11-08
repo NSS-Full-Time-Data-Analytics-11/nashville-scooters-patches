@@ -65,7 +65,59 @@ WHERE companyname = 'Lime'
 GROUP BY startdate
 ORDER BY num_scooters DESC;
 
-SELECT sumdgroup
+SELECT DISTINCT(sumdgroup), sumdid
 FROM scooters
-LIMIT 20
+LIMIT 20;
+
+
+
+WITH top_scooters AS(SELECT sumdid, ROUND(MAX(tripdistance)* 0.0001894, 2)AS max_distance_miles, startlatitude, startlongitude
+	FROM trips
+	WHERE companyname = 'Lime'
+	GROUP BY sumdid, startlatitude, startlongitude
+	ORDER BY max_distance_miles DESC
+	LIMIT 50);
+	
+SELECT sumdid, triproute
+FROM trips INNER JOIN top_scooters USING (sumdid)
+WHERE sumdid IN(top_scooters);
+
+(SELECT sumdid
+FROM scooters)
+EXCEPT
+(SELECT sumdid
+FROM trips);
+
+SELECT COUNT(DISTINCT sumdid)
+FROM scooters;
+
+SELECT COUNT(DISTINCT sumdid)
+FROM scooters
+WHERE companyname = 'Lime';
+
+SELECT COUNT(DISTINCT sumdid)
+FROM trips;
+
+SELECT ROUND(SUM(tripdistance)* 0.0001894 ,2) AS total_miles_lime, companyname
+FROM trips 
+WHERE companyname = 'Lime' OR companyname = 'SPIN' OR companyname = 'Bird'
+GROUP BY companyname;
+
+SELECT ROUND(SUM(tripdistance)* 0.0001894 ,2) AS total_miles, companyname
+FROM trips 
+GROUP BY companyname
+ORDER BY total_miles DESC;
+
+SELECT DISTINCT(companyname), ROUND(AVG(costpermin), 2)
+FROM scooters
+WHERE costpermin > 0.0
+GROUP BY companyname;
+
+SELECT COUNT(DISTINCT sumdid)AS total_scooters, companyname
+FROM trips
+GROUP BY companyname
+ORDER BY total_scooters DESC;
+
+
+
 
