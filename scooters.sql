@@ -3,10 +3,9 @@ FROM scooters
 GROUP BY companyname
 ORDER BY COUNT DESC;
 
-SELECT sumdid, ROUND(SUM(tripdistance)* 0.0001894, 2)AS total_miles, ROUND(SUM(tripduration)/60, 2)AS total_hours
+SELECT ROUND(SUM(tripdistance)* 0.0001894, 2)AS total_miles, ROUND(SUM(tripduration)/60, 2)AS total_hours
 FROM trips
 WHERE companyname = 'Lime'
-GROUP BY sumdid
 ORDER BY total_miles DESC;
 
 WITH top_hours AS(SELECT EXTRACT(HOUr from pubtimestamp)AS hour, COUNT(sumdid)AS num_of_scooters
@@ -71,12 +70,12 @@ LIMIT 20;
 
 
 
-WITH top_scooters AS(SELECT sumdid, ROUND(MAX(tripdistance)* 0.0001894, 2)AS max_distance_miles, startlatitude, startlongitude
+	SELECT sumdid, ROUND(MAX(tripdistance)* 0.0001894, 2)AS max_distance_miles, endlatitude, endlongitude
 	FROM trips
-	WHERE companyname = 'Lime'
-	GROUP BY sumdid, startlatitude, startlongitude
+	WHERE companyname IN ('Lime', 'Bird', 'Spin')
+	GROUP BY sumdid, endlatitude, endlongitude
 	ORDER BY max_distance_miles DESC
-	LIMIT 50);
+	LIMIT 50;
 	
 SELECT sumdid, triproute
 FROM trips INNER JOIN top_scooters USING (sumdid)
@@ -98,9 +97,9 @@ WHERE companyname = 'Lime';
 SELECT COUNT(DISTINCT sumdid)
 FROM trips;
 
-SELECT ROUND(SUM(tripdistance)* 0.0001894 ,2) AS total_miles_lime, companyname
+SELECT ROUND(SUM(tripdistance)* 0.0001894 ,2) AS total_miles_spin, companyname
 FROM trips 
-WHERE companyname = 'Lime' OR companyname = 'SPIN' OR companyname = 'Bird'
+WHERE companyname = 'SPIN' 
 GROUP BY companyname;
 
 SELECT ROUND(SUM(tripdistance)* 0.0001894 ,2) AS total_miles, companyname
@@ -110,7 +109,7 @@ ORDER BY total_miles DESC;
 
 SELECT DISTINCT(companyname), ROUND(AVG(costpermin), 2)
 FROM scooters
-WHERE costpermin > 0.0
+WHERE costpermin > 0.0 AND companyname = 'Lime'
 GROUP BY companyname;
 
 SELECT COUNT(DISTINCT sumdid)AS total_scooters, companyname
@@ -120,4 +119,11 @@ ORDER BY total_scooters DESC;
 
 
 
-
+WITH month AS(SELECT EXTRACT(MONTH from startdate)AS month, sumdid
+		FROM trips
+		WHERE companyname = 'Lime'
+		ORDER BY month DESC)
+SELECT month, COUNT(sumdid)AS num_of_start_months
+FROM month
+GROUP BY month
+ORDER BY num_of_start_months DESC

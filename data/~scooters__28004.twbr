@@ -1,0 +1,1859 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <_.fcp.DashboardExportButton.true...DashboardExportButton />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.Layers.true...Layers />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='total_scooters' inline='true' name='federated.1paaj2k071pi0u1520ag717s0tvw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='total_scooters' name='textscan.1t61bb31xkak060zk652o0fjy89v'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='total_scooters.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1t61bb31xkak060zk652o0fjy89v' name='total_scooters.csv' table='[total_scooters#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='total_scooters' ordinal='0' />
+            <column datatype='string' name='companyname' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1t61bb31xkak060zk652o0fjy89v' name='total_scooters.csv' table='[total_scooters#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='total_scooters' ordinal='0' />
+            <column datatype='string' name='companyname' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[total_scooters.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_scooters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_scooters]</local-name>
+            <parent-name>[total_scooters.csv]</parent-name>
+            <remote-alias>total_scooters</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total_scooters.csv_355CEC448A7B48FF80EAC68B0BA557BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>companyname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[companyname]</local-name>
+            <parent-name>[total_scooters.csv]</parent-name>
+            <remote-alias>companyname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total_scooters.csv_355CEC448A7B48FF80EAC68B0BA557BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='total_scooters.csv' datatype='table' name='[__tableau_internal_object_id__].[total_scooters.csv_355CEC448A7B48FF80EAC68B0BA557BB]' role='measure' type='quantitative' />
+      <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+      <column caption='Total Scooters' datatype='integer' name='[total_scooters]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='total_scooters.csv' id='total_scooters.csv_355CEC448A7B48FF80EAC68B0BA557BB'>
+            <properties context=''>
+              <relation connection='textscan.1t61bb31xkak060zk652o0fjy89v' name='total_scooters.csv' table='[total_scooters#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='total_scooters' ordinal='0' />
+                  <column datatype='string' name='companyname' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='total_miles' inline='true' name='federated.1etvrhm1nmotnx14wya360fjdqba' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='total_miles' name='textscan.0f6hi8m0m6bucb13t8hzi1g2abt6'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='total_miles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0f6hi8m0m6bucb13t8hzi1g2abt6' name='total_miles.csv' table='[total_miles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='total_miles' ordinal='0' />
+            <column datatype='string' name='companyname' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0f6hi8m0m6bucb13t8hzi1g2abt6' name='total_miles.csv' table='[total_miles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='total_miles' ordinal='0' />
+            <column datatype='string' name='companyname' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[total_miles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_miles]</local-name>
+            <parent-name>[total_miles.csv]</parent-name>
+            <remote-alias>total_miles</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total_miles.csv_48D4A9E0B7AC41DA8B47B6E7E4717BA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>companyname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[companyname]</local-name>
+            <parent-name>[total_miles.csv]</parent-name>
+            <remote-alias>companyname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total_miles.csv_48D4A9E0B7AC41DA8B47B6E7E4717BA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='total_miles.csv' datatype='table' name='[__tableau_internal_object_id__].[total_miles.csv_48D4A9E0B7AC41DA8B47B6E7E4717BA4]' role='measure' type='quantitative' />
+      <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+      <column caption='Total Miles' datatype='real' name='[total_miles]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='total_miles.csv' id='total_miles.csv_48D4A9E0B7AC41DA8B47B6E7E4717BA4'>
+            <properties context=''>
+              <relation connection='textscan.0f6hi8m0m6bucb13t8hzi1g2abt6' name='total_miles.csv' table='[total_miles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='total_miles' ordinal='0' />
+                  <column datatype='string' name='companyname' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='limehours' inline='true' name='federated.0ner57s1g05ja613mpy451mwm697' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='limehours' name='textscan.1fhyy4i0czhpg01favi2v0z9fbfc'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='limehours.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1fhyy4i0czhpg01favi2v0z9fbfc' name='limehours.csv' table='[limehours#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='hour' ordinal='0' />
+            <column datatype='integer' name='num_of_start_times' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1fhyy4i0czhpg01favi2v0z9fbfc' name='limehours.csv' table='[limehours#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='hour' ordinal='0' />
+            <column datatype='integer' name='num_of_start_times' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[limehours.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[limehours.csv]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_of_start_times</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_of_start_times]</local-name>
+            <parent-name>[limehours.csv]</parent-name>
+            <remote-alias>num_of_start_times</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='limehours.csv' datatype='table' name='[__tableau_internal_object_id__].[limehours.csv_31C08AE907D24098BF71262DAB9205B3]' role='measure' type='quantitative' />
+      <column caption='Hour' datatype='integer' name='[hour]' role='dimension' type='quantitative' />
+      <column caption='Num Of Start Times' datatype='integer' name='[num_of_start_times]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='limehours.csv' id='limehours.csv_31C08AE907D24098BF71262DAB9205B3'>
+            <properties context=''>
+              <relation connection='textscan.1fhyy4i0czhpg01favi2v0z9fbfc' name='limehours.csv' table='[limehours#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='hour' ordinal='0' />
+                  <column datatype='integer' name='num_of_start_times' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='top_start_end_loc_map' inline='true' name='federated.0sy5avf1e8edk811ozqux0ha35v8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_start_end_loc_map' name='textscan.1jnrrdp0d3ibal16qiu4f1sjb6yw'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='top_start_end_loc_map.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1jnrrdp0d3ibal16qiu4f1sjb6yw' name='top_start_end_loc_map.csv' table='[top_start_end_loc_map#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=' '>
+            <column datatype='spatial' name='&lt;!DOCTYPE' ordinal='0' />
+            <column datatype='spatial' name='html&gt;' ordinal='1' />
+            <column datatype='spatial' name='F3' ordinal='2' />
+            <column datatype='spatial' name='F4' ordinal='3' />
+            <column datatype='spatial' name='F5' ordinal='4' />
+            <column datatype='spatial' name='F6' ordinal='5' />
+            <column datatype='spatial' name='F7' ordinal='6' />
+            <column datatype='spatial' name='F8' ordinal='7' />
+            <column datatype='spatial' name='F9' ordinal='8' />
+            <column datatype='spatial' name='F10' ordinal='9' />
+            <column datatype='spatial' name='F11' ordinal='10' />
+            <column datatype='spatial' name='F12' ordinal='11' />
+            <column datatype='spatial' name='F13' ordinal='12' />
+            <column datatype='spatial' name='F14' ordinal='13' />
+            <column datatype='spatial' name='F15' ordinal='14' />
+            <column datatype='spatial' name='F16' ordinal='15' />
+            <column datatype='spatial' name='F17' ordinal='16' />
+            <column datatype='spatial' name='F18' ordinal='17' />
+            <column datatype='spatial' name='F19' ordinal='18' />
+            <column datatype='spatial' name='F20' ordinal='19' />
+            <column datatype='spatial' name='F21' ordinal='20' />
+            <column datatype='spatial' name='F22' ordinal='21' />
+            <column datatype='spatial' name='F23' ordinal='22' />
+            <column datatype='spatial' name='F24' ordinal='23' />
+            <column datatype='spatial' name='F25' ordinal='24' />
+            <column datatype='spatial' name='F26' ordinal='25' />
+            <column datatype='spatial' name='F27' ordinal='26' />
+            <column datatype='spatial' name='F28' ordinal='27' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1jnrrdp0d3ibal16qiu4f1sjb6yw' name='top_start_end_loc_map.csv' table='[top_start_end_loc_map#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=' '>
+            <column datatype='spatial' name='&lt;!DOCTYPE' ordinal='0' />
+            <column datatype='spatial' name='html&gt;' ordinal='1' />
+            <column datatype='spatial' name='F3' ordinal='2' />
+            <column datatype='spatial' name='F4' ordinal='3' />
+            <column datatype='spatial' name='F5' ordinal='4' />
+            <column datatype='spatial' name='F6' ordinal='5' />
+            <column datatype='spatial' name='F7' ordinal='6' />
+            <column datatype='spatial' name='F8' ordinal='7' />
+            <column datatype='spatial' name='F9' ordinal='8' />
+            <column datatype='spatial' name='F10' ordinal='9' />
+            <column datatype='spatial' name='F11' ordinal='10' />
+            <column datatype='spatial' name='F12' ordinal='11' />
+            <column datatype='spatial' name='F13' ordinal='12' />
+            <column datatype='spatial' name='F14' ordinal='13' />
+            <column datatype='spatial' name='F15' ordinal='14' />
+            <column datatype='spatial' name='F16' ordinal='15' />
+            <column datatype='spatial' name='F17' ordinal='16' />
+            <column datatype='spatial' name='F18' ordinal='17' />
+            <column datatype='spatial' name='F19' ordinal='18' />
+            <column datatype='spatial' name='F20' ordinal='19' />
+            <column datatype='spatial' name='F21' ordinal='20' />
+            <column datatype='spatial' name='F22' ordinal='21' />
+            <column datatype='spatial' name='F23' ordinal='22' />
+            <column datatype='spatial' name='F24' ordinal='23' />
+            <column datatype='spatial' name='F25' ordinal='24' />
+            <column datatype='spatial' name='F26' ordinal='25' />
+            <column datatype='spatial' name='F27' ordinal='26' />
+            <column datatype='spatial' name='F28' ordinal='27' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot; &quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&lt;!DOCTYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[&lt;!DOCTYPE]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>&lt;!DOCTYPE</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>html&gt;</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[html&gt;]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>html&gt;</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F15</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F15]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F15</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F16</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F16]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F16</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F18</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F18]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F18</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F19</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F19]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F19</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F21</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F21]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F21</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F22</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F22]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F22</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F23</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F23]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F23</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F24</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F24]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F24</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F25</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F25]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F25</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F26</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F26]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F26</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F27</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F27]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F27</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F28</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F28]</local-name>
+            <parent-name>[top_start_end_loc_map.csv]</parent-name>
+            <remote-alias>F28</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <precision>-1</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='&lt;!Doctype' datatype='spatial' name='[&lt;!DOCTYPE]' role='measure' type='nominal' />
+      <column caption='Calculation1' datatype='integer' name='[Calculation_1970606332654026752]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([__tableau_internal_object_id__].[top_start_end_loc_map.csv_746557B7E67649A9B7F91D2368101275])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='top_start_end_loc_map.csv' datatype='table' name='[__tableau_internal_object_id__].[top_start_end_loc_map.csv_746557B7E67649A9B7F91D2368101275]' role='measure' type='quantitative' />
+      <column caption='Html&gt;' datatype='spatial' name='[html&gt;]' role='measure' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='&lt;!DOCTYPE' />
+        <field-sort-custom-order field='html&gt;' />
+        <field-sort-custom-order field='F3' />
+        <field-sort-custom-order field='F4' />
+        <field-sort-custom-order field='F5' />
+        <field-sort-custom-order field='F6' />
+        <field-sort-custom-order field='F7' />
+        <field-sort-custom-order field='F8' />
+        <field-sort-custom-order field='F9' />
+        <field-sort-custom-order field='F10' />
+        <field-sort-custom-order field='F11' />
+        <field-sort-custom-order field='F12' />
+        <field-sort-custom-order field='F13' />
+        <field-sort-custom-order field='F14' />
+        <field-sort-custom-order field='F15' />
+        <field-sort-custom-order field='F16' />
+        <field-sort-custom-order field='F17' />
+        <field-sort-custom-order field='F18' />
+        <field-sort-custom-order field='F19' />
+        <field-sort-custom-order field='F20' />
+        <field-sort-custom-order field='F21' />
+        <field-sort-custom-order field='F22' />
+        <field-sort-custom-order field='F23' />
+        <field-sort-custom-order field='F24' />
+        <field-sort-custom-order field='F25' />
+        <field-sort-custom-order field='F26' />
+        <field-sort-custom-order field='F27' />
+        <field-sort-custom-order field='F28' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='top_start_end_loc_map.csv' id='top_start_end_loc_map.csv_746557B7E67649A9B7F91D2368101275'>
+            <properties context=''>
+              <relation connection='textscan.1jnrrdp0d3ibal16qiu4f1sjb6yw' name='top_start_end_loc_map.csv' table='[top_start_end_loc_map#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=' '>
+                  <column datatype='spatial' name='&lt;!DOCTYPE' ordinal='0' />
+                  <column datatype='spatial' name='html&gt;' ordinal='1' />
+                  <column datatype='spatial' name='F3' ordinal='2' />
+                  <column datatype='spatial' name='F4' ordinal='3' />
+                  <column datatype='spatial' name='F5' ordinal='4' />
+                  <column datatype='spatial' name='F6' ordinal='5' />
+                  <column datatype='spatial' name='F7' ordinal='6' />
+                  <column datatype='spatial' name='F8' ordinal='7' />
+                  <column datatype='spatial' name='F9' ordinal='8' />
+                  <column datatype='spatial' name='F10' ordinal='9' />
+                  <column datatype='spatial' name='F11' ordinal='10' />
+                  <column datatype='spatial' name='F12' ordinal='11' />
+                  <column datatype='spatial' name='F13' ordinal='12' />
+                  <column datatype='spatial' name='F14' ordinal='13' />
+                  <column datatype='spatial' name='F15' ordinal='14' />
+                  <column datatype='spatial' name='F16' ordinal='15' />
+                  <column datatype='spatial' name='F17' ordinal='16' />
+                  <column datatype='spatial' name='F18' ordinal='17' />
+                  <column datatype='spatial' name='F19' ordinal='18' />
+                  <column datatype='spatial' name='F20' ordinal='19' />
+                  <column datatype='spatial' name='F21' ordinal='20' />
+                  <column datatype='spatial' name='F22' ordinal='21' />
+                  <column datatype='spatial' name='F23' ordinal='22' />
+                  <column datatype='spatial' name='F24' ordinal='23' />
+                  <column datatype='spatial' name='F25' ordinal='24' />
+                  <column datatype='spatial' name='F26' ordinal='25' />
+                  <column datatype='spatial' name='F27' ordinal='26' />
+                  <column datatype='spatial' name='F28' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='start_days_lime' inline='true' name='federated.19xyrpf0g9lkva16rb03f1anbmlm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='start_days_lime' name='textscan.0dtce1d1ox1iz21c1hu070ne6t7w'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='start_days_lime.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dtce1d1ox1iz21c1hu070ne6t7w' name='start_days_lime.csv' table='[start_days_lime#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='num_scooters' ordinal='1' />
+            <column datatype='date' name='startdate' ordinal='2' />
+            <column datatype='string' name='weekday' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0dtce1d1ox1iz21c1hu070ne6t7w' name='start_days_lime.csv' table='[start_days_lime#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='num_scooters' ordinal='1' />
+            <column datatype='date' name='startdate' ordinal='2' />
+            <column datatype='string' name='weekday' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[start_days_lime.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[start_days_lime.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[start_days_lime.csv_3E4F77C61E064EBAB2B6880384DF86CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_scooters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_scooters]</local-name>
+            <parent-name>[start_days_lime.csv]</parent-name>
+            <remote-alias>num_scooters</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[start_days_lime.csv_3E4F77C61E064EBAB2B6880384DF86CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>startdate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[startdate]</local-name>
+            <parent-name>[start_days_lime.csv]</parent-name>
+            <remote-alias>startdate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[start_days_lime.csv_3E4F77C61E064EBAB2B6880384DF86CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weekday]</local-name>
+            <parent-name>[start_days_lime.csv]</parent-name>
+            <remote-alias>weekday</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[start_days_lime.csv_3E4F77C61E064EBAB2B6880384DF86CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='start_days_lime.csv' datatype='table' name='[__tableau_internal_object_id__].[start_days_lime.csv_3E4F77C61E064EBAB2B6880384DF86CB]' role='measure' type='quantitative' />
+      <column caption='Num Scooters' datatype='integer' name='[num_scooters]' role='measure' type='quantitative' />
+      <column caption='Startdate' datatype='date' name='[startdate]' role='dimension' type='ordinal' />
+      <column caption='Weekday' datatype='string' name='[weekday]' role='dimension' type='nominal' />
+      <column-instance column='[weekday]' derivation='None' name='[none:weekday:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:weekday:nk]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#8074a8'>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </map>
+            <map to='#9b93c9'>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </map>
+            <map to='#9c9290'>
+              <bucket>&quot;Thursday&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;Tuesday&quot;</bucket>
+            </map>
+            <map to='#c5bfbe'>
+              <bucket>&quot;Friday&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;Monday&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;Wednesday&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='start_days_lime.csv' id='start_days_lime.csv_3E4F77C61E064EBAB2B6880384DF86CB'>
+            <properties context=''>
+              <relation connection='textscan.0dtce1d1ox1iz21c1hu070ne6t7w' name='start_days_lime.csv' table='[start_days_lime#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='num_scooters' ordinal='1' />
+                  <column datatype='date' name='startdate' ordinal='2' />
+                  <column datatype='string' name='weekday' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='month_lime' inline='true' name='federated.0nb5v1q1ksm8dk1gri4vm1ib997b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='month_lime' name='textscan.1063amq1y63rge1er127z1u67fru'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='month_lime.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1063amq1y63rge1er127z1u67fru' name='month_lime.csv' table='[month_lime#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='MM' name='month' ordinal='0' />
+            <column datatype='integer' name='num_of_start_months' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1063amq1y63rge1er127z1u67fru' name='month_lime.csv' table='[month_lime#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='MM' name='month' ordinal='0' />
+            <column datatype='integer' name='num_of_start_months' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[month_lime.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[month_lime.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_of_start_months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_of_start_months]</local-name>
+            <parent-name>[month_lime.csv]</parent-name>
+            <remote-alias>num_of_start_months</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='month_lime.csv' datatype='table' name='[__tableau_internal_object_id__].[month_lime.csv_E533A122883045B0AD1C95D69183027F]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Num Of Start Months' datatype='integer' name='[num_of_start_months]' role='measure' type='quantitative' />
+      <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[mn:month:ok]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#8074a8'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>6</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='month_lime.csv' id='month_lime.csv_E533A122883045B0AD1C95D69183027F'>
+            <properties context=''>
+              <relation connection='textscan.1063amq1y63rge1er127z1u67fru' name='month_lime.csv' table='[month_lime#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' date-parse-format='MM' name='month' ordinal='0' />
+                  <column datatype='integer' name='num_of_start_months' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='month_lime (2)' inline='true' name='federated.0urhov31lse94o11wp9wa1rowua4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='month_lime' name='textscan.0ofveff0o0us0118t25s00bm0mo6'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='month_lime.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ofveff0o0us0118t25s00bm0mo6' name='month_lime.csv' table='[month_lime#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='MM' name='month' ordinal='0' />
+            <column datatype='integer' name='num_of_start_months' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ofveff0o0us0118t25s00bm0mo6' name='month_lime.csv' table='[month_lime#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='MM' name='month' ordinal='0' />
+            <column datatype='integer' name='num_of_start_months' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[month_lime.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[month_lime.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_of_start_months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_of_start_months]</local-name>
+            <parent-name>[month_lime.csv]</parent-name>
+            <remote-alias>num_of_start_months</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='month_lime.csv' datatype='table' name='[__tableau_internal_object_id__].[month_lime.csv_51C4E3F1A3F448F59A2B8E941A58AC5B]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Number of Trips' datatype='integer' name='[num_of_start_months]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='month_lime.csv' id='month_lime.csv_51C4E3F1A3F448F59A2B8E941A58AC5B'>
+            <properties context=''>
+              <relation connection='textscan.0ofveff0o0us0118t25s00bm0mo6' name='month_lime.csv' table='[month_lime#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' date-parse-format='MM' name='month' ordinal='0' />
+                  <column datatype='integer' name='num_of_start_months' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='total_hours_miles' inline='true' name='federated.1tvkk590gpha3t13fk1o71goj0lq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='total_hours_miles' name='textscan.153ddqz1bd47bw1d350pp1r1c9qn'>
+            <connection class='textscan' directory='C:/Users/oxyje/Documents/NSS/Python/projects/nashville-scooters-patches/data' filename='total_hours_miles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.153ddqz1bd47bw1d350pp1r1c9qn' name='total_hours_miles.csv' table='[total_hours_miles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='total_miles' ordinal='0' />
+            <column datatype='real' name='total_hours' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.153ddqz1bd47bw1d350pp1r1c9qn' name='total_hours_miles.csv' table='[total_hours_miles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='total_miles' ordinal='0' />
+            <column datatype='real' name='total_hours' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[total_hours_miles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_miles]</local-name>
+            <parent-name>[total_hours_miles.csv]</parent-name>
+            <remote-alias>total_miles</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total_hours_miles.csv_867B9F94ED164642B4FAA7833AA8ABFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_hours]</local-name>
+            <parent-name>[total_hours_miles.csv]</parent-name>
+            <remote-alias>total_hours</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[total_hours_miles.csv_867B9F94ED164642B4FAA7833AA8ABFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='total_hours_miles.csv' datatype='table' name='[__tableau_internal_object_id__].[total_hours_miles.csv_867B9F94ED164642B4FAA7833AA8ABFC]' role='measure' type='quantitative' />
+      <column caption='Total Hours' datatype='real' name='[total_hours]' role='measure' type='quantitative' />
+      <column caption='Total Miles' datatype='real' name='[total_miles]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='total_hours_miles.csv' id='total_hours_miles.csv_867B9F94ED164642B4FAA7833AA8ABFC'>
+            <properties context=''>
+              <relation connection='textscan.153ddqz1bd47bw1d350pp1r1c9qn' name='total_hours_miles.csv' table='[total_hours_miles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='total_miles' ordinal='0' />
+                  <column datatype='real' name='total_hours' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Start Time by Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='limehours' name='federated.0ner57s1g05ja613mpy451mwm697' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ner57s1g05ja613mpy451mwm697'>
+            <column caption='Hour' datatype='integer' name='[hour]' role='dimension' type='quantitative' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column caption='Num Of Start Times' datatype='integer' name='[num_of_start_times]' role='measure' type='quantitative' />
+            <column-instance column='[num_of_start_times]' derivation='Sum' name='[sum:num_of_start_times:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0ner57s1g05ja613mpy451mwm697].[none:hour:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ner57s1g05ja613mpy451mwm697].[sum:num_of_start_times:qk]</rows>
+        <cols>[federated.0ner57s1g05ja613mpy451mwm697].[none:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{41F06C28-46F6-423F-BE49-CEE1C325FBC3}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Total Scooters In Use</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='total_scooters' name='federated.1paaj2k071pi0u1520ag717s0tvw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1paaj2k071pi0u1520ag717s0tvw'>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_scooters]' derivation='Sum' name='[sum:total_scooters:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Scooters' datatype='integer' name='[total_scooters]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1paaj2k071pi0u1520ag717s0tvw].[none:companyname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1paaj2k071pi0u1520ag717s0tvw].[sum:total_scooters:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='80' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='background-color' field='[federated.1paaj2k071pi0u1520ag717s0tvw].[none:companyname:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='rows' value='5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1paaj2k071pi0u1520ag717s0tvw].[none:companyname:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1paaj2k071pi0u1520ag717s0tvw].[sum:total_scooters:qk]</rows>
+        <cols>[federated.1paaj2k071pi0u1520ag717s0tvw].[none:companyname:nk]</cols>
+      </table>
+      <simple-id uuid='{24DCBDD9-EA18-47F8-A39D-9C72C5EE1776}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Trips Per Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='month_lime' name='federated.0nb5v1q1ksm8dk1gri4vm1ib997b' />
+            <datasource caption='month_lime (2)' name='federated.0urhov31lse94o11wp9wa1rowua4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nb5v1q1ksm8dk1gri4vm1ib997b'>
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0urhov31lse94o11wp9wa1rowua4'>
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column caption='Number of Trips' datatype='integer' name='[num_of_start_months]' role='measure' type='quantitative' />
+            <column-instance column='[num_of_start_months]' derivation='Sum' name='[sum:num_of_start_months:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0nb5v1q1ksm8dk1gri4vm1ib997b].[mn:month:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0urhov31lse94o11wp9wa1rowua4].[sum:num_of_start_months:qk]</rows>
+        <cols>[federated.0urhov31lse94o11wp9wa1rowua4].[mn:month:ok]</cols>
+      </table>
+      <simple-id uuid='{4DC6BB8A-5ACE-471F-A81F-62FFEE70F1D6}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='start_days_lime' name='federated.19xyrpf0g9lkva16rb03f1anbmlm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19xyrpf0g9lkva16rb03f1anbmlm'>
+            <column-instance column='[weekday]' derivation='None' name='[none:weekday:nk]' pivot='key' type='nominal' />
+            <column caption='Num Scooters' datatype='integer' name='[num_scooters]' role='measure' type='quantitative' />
+            <column-instance column='[num_scooters]' derivation='Sum' name='[sum:num_scooters:qk]' pivot='key' type='quantitative' />
+            <column caption='Weekday' datatype='string' name='[weekday]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.19xyrpf0g9lkva16rb03f1anbmlm].[none:weekday:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.19xyrpf0g9lkva16rb03f1anbmlm].[sum:num_scooters:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19xyrpf0g9lkva16rb03f1anbmlm].[none:weekday:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.19xyrpf0g9lkva16rb03f1anbmlm].[sum:num_scooters:qk]</rows>
+        <cols>[federated.19xyrpf0g9lkva16rb03f1anbmlm].[none:weekday:nk]</cols>
+      </table>
+      <simple-id uuid='{C28EC1BD-80E7-4438-A94D-8D5531433D72}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Lime Miles and Hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_start_end_loc_map' name='federated.0sy5avf1e8edk811ozqux0ha35v8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0sy5avf1e8edk811ozqux0ha35v8'>
+            <column datatype='spatial' name='[F20]' role='measure' type='nominal' />
+            <column datatype='spatial' name='[F22]' role='measure' type='nominal' />
+            <column datatype='spatial' name='[F24]' role='measure' type='nominal' />
+            <column datatype='spatial' name='[F25]' role='measure' type='nominal' />
+            <column datatype='spatial' name='[F28]' role='measure' type='nominal' />
+            <column-instance column='[F20]' derivation='Collect' name='[clct:F20:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F22]' derivation='Collect' name='[clct:F22:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F24]' derivation='Collect' name='[clct:F24:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F25]' derivation='Collect' name='[clct:F25:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F28]' derivation='Collect' name='[clct:F28:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0sy5avf1e8edk811ozqux0ha35v8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0sy5avf1e8edk811ozqux0ha35v8].[Longitude (generated)]' field-type='quantitative' max='7022045.7715749033' min='-14983652.354298241' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0sy5avf1e8edk811ozqux0ha35v8].[Latitude (generated)]' field-type='quantitative' max='5783261.2270458359' min='-6924003.4219487589' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes _.fcp.Layers.true...customization-axis='layer'>
+          <_.fcp.Layers.true...pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </_.fcp.Layers.true...pane>
+          <pane _.fcp.Layers.true...generated-title='F22' id='0' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <geometry column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F22:nk]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[Latitude (generated)]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[Longitude (generated)]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F22:nk]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F24:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <_.fcp.Layers.true...pane generated-title='F20' id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <geometry column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F25:nk]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F25:nk]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F20:nk]' />
+              <lod column='[federated.0sy5avf1e8edk811ozqux0ha35v8].[clct:F28:nk]' />
+            </encodings>
+          </_.fcp.Layers.true...pane>
+        </panes>
+        <rows>[federated.0sy5avf1e8edk811ozqux0ha35v8].[Latitude (generated)]</rows>
+        <cols>[federated.0sy5avf1e8edk811ozqux0ha35v8].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F03AD213-8BAA-4905-A970-B40228F75030}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{74F3CB14-6CC5-4A8D-88A5-37FD191990B6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='6500' id='3' type-v2='dashboard-object' w='16400' x='25300' y='63000'>
+          <button _.fcp.DashboardExportButton.true...button-click-action-metadata='pdf' action='' button-type='text'>
+            <_.fcp.DashboardExportButton.true...export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{D2CFEFF8-6D54-4DE8-9FEE-D6A08C0DB86C}&quot;</_.fcp.DashboardExportButton.true...export-button-action>
+            <button-visual-state>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D2CFEFF8-6D54-4DE8-9FEE-D6A08C0DB86C}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E9632E49-D02A-435B-9888-4614D031F046}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='33250' id='3' name='Sheet 1' w='33300' x='600' y='1375' />
+        <zone h='11000' id='4' name='Sheet 1' pane-specification-id='0' param='[federated.0ner57s1g05ja613mpy451mwm697].[none:hour:qk]' type-v2='color' w='14000' x='48700' y='37625' />
+        <zone h='63625' id='5' name='Sheet 4' w='46700' x='1000' y='35750' />
+        <zone h='11000' id='6' name='Sheet 4' pane-specification-id='0' param='[federated.0nb5v1q1ksm8dk1gri4vm1ib997b].[mn:month:ok]' type-v2='color' w='14000' x='46500' y='61625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A42C4C1E-2969-4EE6-A2D8-085A9BCEB3A7}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='39625' id='3' name='Sheet 6' w='60100' x='25800' y='44875' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8BA1D4B0-A3EB-42BD-9011-B8447EB03D7D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='177'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ner57s1g05ja613mpy451mwm697].[none:hour:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F60BE58-6C09-4EF5-8141-EB45CA72011D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1paaj2k071pi0u1520ag717s0tvw].[none:companyname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{DCF9B07C-FADD-4C6D-BDB9-082586970B99}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nb5v1q1ksm8dk1gri4vm1ib997b].[mn:month:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D539E831-E5F8-4319-88FE-EADA464A51CD}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19xyrpf0g9lkva16rb03f1anbmlm].[none:weekday:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{24A64BFE-541B-4FE8-983B-46F4DE3EED9F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{AF7EAA05-7E2C-4DAB-AE61-F8E4E699C2F5}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{9FD8A5DC-7C47-4CCE-AC2B-5C2235F5D051}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6F59B893-59D3-4361-998B-4247DB8B52A7}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{19611B9D-450D-47AF-8D36-4867F44B8C58}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{73194F22-AD45-47B7-86B3-B9E5AFEA2C62}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Sheet 6' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{39A045AA-3EF4-457B-AEE7-BF7FB80E371F}' />
+    </window>
+  </windows>
+</workbook>
