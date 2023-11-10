@@ -24,3 +24,20 @@ WHERE scooters.companyname = 'Lime'
    AND trips.companyname = 'Lime'
 GROUP BY sumdgroup,day
 LIMIT 500;
+
+SELECT SUM(tripdistance)* 0.0001894  AS total_miles, companyname
+FROM trips 
+GROUP BY companyname
+ORDER BY total_miles DESC;
+
+SELECT COUNT(DISTINCT sumdid)AS total_scooters, companyname
+FROM trips
+GROUP BY companyname
+ORDER BY total_scooters DESC;
+
+SELECT avg(chargelevel) as average_charge, companyname
+FROM scooters
+GROUP BY companyname
+ORDER BY average_charge;
+
+
