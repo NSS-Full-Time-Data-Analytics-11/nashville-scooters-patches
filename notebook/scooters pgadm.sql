@@ -6,29 +6,30 @@ SELECT *
 FROM trips;
 
 SELECT *
-FROM scooters inner join trips using (sumdid)
+FROM trips inner join scooters using (sumdid)
 LIMIT 100000;
 
+SELECT max(latitude) as max_lat, min(latitude) as min_lat, 
+       max(longitude) as max_long, min(longitude) as min_long
+FROM scooters;
 
-SELECT max(tripdistance) as max_distance, sumdgroup,
-                                                   (SELECT extract(day from pubtimestamp) as day)
+
+SELECT max(tripduration) as duration_max, min(tripduration) as duration_min, 
+       max(tripdistance) as distance_max, min(tripdistance) as distance_min
+FROM trips;
+
+
+SELECT avg(tripduration) as avg_duration, sumdgroup,(SELECT extract(month from pubtimestamp) as month)
 FROM trips inner join scooters using (sumdid)
 WHERE scooters.companyname = 'Lime'
    AND trips.companyname = 'Lime'
-GROUP BY sumdgroup,day
+GROUP BY sumdgroup,month
 LIMIT 500;
 
-SELECT avg(tripduration) as avg_duration, sumdgroup,(SELECT extract(day from pubtimestamp) as day)
-FROM trips inner join scooters using (sumdid)
-WHERE scooters.companyname = 'Lime'
-   AND trips.companyname = 'Lime'
-GROUP BY sumdgroup,day
-LIMIT 500;
-
-SELECT SUM(tripdistance)* 0.0001894  AS total_miles, companyname
+SELECT SUM(tripdistance)  AS total_trip_distance, companyname
 FROM trips 
 GROUP BY companyname
-ORDER BY total_miles DESC;
+ORDER BY total_trip_distance DESC;
 
 SELECT COUNT(DISTINCT sumdid)AS total_scooters, companyname
 FROM trips
